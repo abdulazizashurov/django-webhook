@@ -4,5 +4,5 @@ from .views import UpdateBot
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('<str:bot_token>/', UpdateBot.as_view()),
+    path('bot/<str:bot_token>/', UpdateBot.as_view()),
 ]
